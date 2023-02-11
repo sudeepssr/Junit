@@ -20,6 +20,7 @@ public class EmployeeController {
 
 	@GetMapping("/employee")
 	public Employee getEmployee(@RequestParam String employeeId) {
+		System.out.println("Hi from the controller");
 		Employee employee = null;
 		try {
 			employee = employeeService.getEmployeeDetails(employeeId);
